@@ -21161,12 +21161,37 @@ body {
   font-size: 50px;
 }
 
+#formHead {
+  margin-left: 8%;
+  padding: 32px 32px 0;
+}
+
+#formHead input {
+  padding: 12px;
+  margin-right: 12px;
+  width: 225px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+#formHead button {
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
 .col {
   color: white;
   margin: 0.5%;
   border-radius: 5px;
   margin-top: 5%;
-  height: 350px;
+  min-height: 200px;
 }
 
 .hcinq {
@@ -21179,11 +21204,20 @@ body {
 
 .code {
   background-color: darkgray;
-  margin: 1%;
+  margin: 1.5%;
   border-radius: 5px;
   height: 50px;
   width: 300px;
-  transition: all 0.2s linear;
+  pointer-events: all;
+  transition: transform 0.2s ease-in-out;
+  cursor: move;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.code:active {
+  transform: scale(1.1);
 }
 
 #rouge {

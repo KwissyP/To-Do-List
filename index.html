@@ -12,21 +12,26 @@
 <body>
     <header>
         <h1 id="Titre" class="text-center fw-bold">TO DO LIST</h1>
+        <form id="formHead">
+            <input type="text" placeholder="New task" id="inputHead" class="shadow" />
+            <button class ='shadow' type="submit">+</button>
+        </form>
     </header>
-    <section class="container text-center" id="">
+    <section class="container text-center" id="divSec">
         <div class="row align-items-start">
-            <div class="col d-flex flex-column align-items-center">
-                <h5 class="hcinq d-flex align-items-center justify-content-center" id="rouge">TO DO</h5>
-                <div class="code d-flex align-items-center justify-content-center" draggable="true">HTML</div>
-				<div class="code d-flex align-items-center justify-content-center" draggable="true">CSS</div>
-				<div class="code d-flex align-items-center justify-content-center" draggable="true">JAVASCRIPT</div>
-                <div class="code d-flex align-items-center justify-content-center" draggable="true">REACT JS</div>
+            <div class="col d-flex flex-column align-items-center" id="divSec">
+                <h5 class="hcinq d-flex align-items-center justify-content-center shadow" id="rouge">TO DO</h5>
+				<div class="code shadow-sm">CSS</div>
+				<div class="code shadow-sm">JAVASCRIPT</div>
+                <div class="code shadow-sm">PYTHON</div>
             </div>
             <div class="col d-flex flex-column align-items-center">
-                <h5 class="hcinq d-flex align-items-center justify-content-center" id="orange">IN PROGRESS</h5>
+                <h5 class="hcinq d-flex align-items-center justify-content-center shadow" id="orange">IN PROGRESS</h5>
+                <div class="code shadow-sm">REACT JS</div>
             </div>
             <div class="col d-flex flex-column align-items-center">
-                <h5 class="hcinq d-flex align-items-center justify-content-center" id="vert">DONE</h5>
+                <h5 class="hcinq d-flex align-items-center justify-content-center shadow" id="vert">DONE</h5>
+                <div class="code shadow-sm">HTML</div>
             </div>
         </div>
     </section>
