@@ -7,7 +7,6 @@
 }
 
 .hcinq {
-    text-decoration: underline;
     font-weight: bold;
     width: 350px;
     height: 50px;
@@ -21,17 +20,11 @@
     height: 50px;
     width: 300px;
     pointer-events: all;
-    transition: transform 0.2s ease-in-out;
     cursor: move;
     display: flex!important;
     align-items: center;
     justify-content: center;
 }
-
-.code:active {
-    transform: scale(1.1);
-}
-
 
 #rouge {
     background-color: red;
@@ -43,4 +36,11 @@
 
 #vert {
     background-color: green;
+}
+
+.is-dragging {
+    scale: 1.05;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: grey;
+    color: white;
 }
