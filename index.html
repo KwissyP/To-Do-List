@@ -12,10 +12,6 @@
 <body>
     <header>
         <h1 id="Titre" class="text-center fw-bold">TO DO LIST</h1>
-        <form id="formHead">
-            <input type="text" placeholder="New task" id="inputHead" class="shadow" />
-            <button class ='shadow' type="submit">+</button>
-        </form>
     </header>
     <section class="container text-center" id="divSec">
         <div class="row align-items-start">
@@ -24,6 +20,10 @@
 				<div class="code shadow-sm">CSS</div>
 				<div class="code shadow-sm">JAVASCRIPT</div>
                 <div class="code shadow-sm">PYTHON</div>
+                <form id="formHead" class="d-flex code">
+                    <input type="text" placeholder="New task" id="inputHead" class="shadow" />
+                    <button class ='shadow' type="submit">+</button>
+                </form>
             </div>
             <div class="col d-flex flex-column align-items-center">
                 <h5 class="hcinq d-flex align-items-center justify-content-center shadow" id="orange">IN PROGRESS</h5>

@@ -22,6 +22,7 @@ form.addEventListener("submit", (e) => {
     input.value = "";
 });
 
+// Drag & Drop
 const draggables = document.querySelectorAll(".code");
 const droppables = document.querySelectorAll(".col");
 
