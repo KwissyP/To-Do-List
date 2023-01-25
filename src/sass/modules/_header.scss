@@ -12,11 +12,20 @@ body {
 
 #Titre {
     font-size: 50px;
+    background-color: red;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 #formHead {
     margin-left: 8%;
     padding: 32px 32px 0;
+    opacity: 0.8;
 }
 
 #formHead input {

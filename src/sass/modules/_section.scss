@@ -14,7 +14,7 @@
 }
 
 .code {
-    background-color: darkgray;
+    background-color: rgba(169, 169, 169, 0.305);
     margin: 1.5%;
     border-radius: 5px;
     height: 50px;
@@ -27,20 +27,20 @@
 }
 
 #rouge {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.796);
 }
 
 #orange {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.796);
 }
 
 #vert {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.796);
 }
 
 .is-dragging {
     scale: 1.05;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    background: grey;
+    background: rgba(128, 128, 128, 0.61);
     color: white;
 }

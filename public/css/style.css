@@ -21160,11 +21160,20 @@ body {
 
 #Titre {
   font-size: 50px;
+  background-color: red;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 #formHead {
   margin-left: 8%;
   padding: 32px 32px 0;
+  opacity: 0.8;
 }
 
 #formHead input {
@@ -21203,7 +21212,7 @@ body {
 }
 
 .code {
-  background-color: darkgray;
+  background-color: rgba(169, 169, 169, 0.305);
   margin: 1.5%;
   border-radius: 5px;
   height: 50px;
@@ -21216,21 +21225,21 @@ body {
 }
 
 #rouge {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.796);
 }
 
 #orange {
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.796);
 }
 
 #vert {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.796);
 }
 
 .is-dragging {
   scale: 1.05;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-  background: grey;
+  background: rgba(128, 128, 128, 0.61);
   color: white;
 }
 
