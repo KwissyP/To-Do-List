@@ -81,7 +81,15 @@ for (let i = 0; i < code.length; i++) {
             const target = e.target;
 
             if (target && target !== draggedItem && target.classList.contains('code')) {
-                target.parentNode.insertBefore(draggedItem, target.nextElementSibling)(draggedItem, target)
+                const nextSibling = target.nextElementSibling;
+                const parent = target.parentNode;
+                parent.insertBefore(draggedItem, target);
+                if (nextSibling) {
+                    parent.insertBefore(target, nextSibling);
+                } else {
+                    parent.appendChild(target);
+                    target.nextElementSibling = nextSibling;
+                }
             } else {
                 list.appendChild(draggedItem);
             }
